@@ -1,4 +1,4 @@
-package game.backend.clases;
+package microservicio.backend.clases;
 import javax.persistence.*;
 
 

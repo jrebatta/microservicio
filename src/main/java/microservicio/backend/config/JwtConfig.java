@@ -1,4 +1,4 @@
-package game.backend.config;
+package microservicio.backend.config;
 
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;

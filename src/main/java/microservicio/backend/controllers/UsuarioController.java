@@ -1,7 +1,7 @@
-package game.backend.controllers;
+package microservicio.backend.controllers;
 
-import game.backend.interfaces.UsuarioRepository;
-import game.backend.clases.Usuario;
+import microservicio.backend.interfaces.UsuarioRepository;
+import microservicio.backend.clases.Usuario;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
