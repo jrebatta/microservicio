@@ -28,6 +28,12 @@ public class UsuarioController {
             return ResponseEntity.badRequest().body("Las contraseñas no coinciden");
         }
 
+        // Verificar si el usuario ya existe en la base de datos
+        Usuario usuarioExistente = usuarioRepository.findByUser(usuario.getUser());
+        if (usuarioExistente != null) {
+            return ResponseEntity.badRequest().body("El usuario ya está registrado");
+        }
+
         usuarioRepository.save(usuario);
         return ResponseEntity.ok("Usuario registrado exitosamente");
     }
